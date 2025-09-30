@@ -1,0 +1,28 @@
+{
+  "name": "@packages/nestjs-common",
+  "version": "0.0.0",  "exports": {
+    ".": { 
+      "import": "./src/index.ts",
+      "require": "./src/index.ts",
+      "types": "./src/index.ts" 
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "zod": "^4.1.11"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@packages/eslint-config": "workspace:*",
+    "@packages/prettier-config": "workspace:*",
+    "@packages/typescript-config": "workspace:*",
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}

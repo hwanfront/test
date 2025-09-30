@@ -1,0 +1,23 @@
+{
+  "extends": "@packages/typescript-config/nestjs.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "sourceRoot": "src",
+    "rootDir": "../../",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@packages/nestjs-common": ["../../packages/nestjs-common/src/index.ts"],
+      "@packages/nestjs-common/*": ["../../packages/nestjs-common/src/*"],
+      "@packages/shared-types": ["../../packages/shared-types/src/index.ts"],
+      "@packages/shared-types/*": ["../../packages/shared-types/src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "../../packages/shared-types/src/**/*"
+  ]
+}
